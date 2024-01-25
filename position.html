@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        nav{ margin: 200px;}
+        nav li{ display: inline; position: relative; padding: 10px;}
+       .sub li{ display: block;}
+       .sub{ top: 100%; left: 0; position: absolute; display: none;}
+       li:hover .sub{ display: block;}
+       .demo li{ display: block;}
+       .demo{ top: 0%; left: 110%; position: absolute; display: none;}
+       .sub li:hover .demo{ display: block;}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> <a href="">Home</a></li>
+            <li> <a href="">About Us</a>
+            <ul class="sub">
+                <li> <a href="">mission</a>
+                <ul class="demo">
+                    <li> <a href="">Elina</a></li>
+                    <li> <a href="">Bastola</a></li>
+                </ul>
+                </li>
+                <li> <a href="">vision</a></li>
+            </ul>
+            </li>
+            <li> <a href="">Services</a></li>
+            <li> <a href="">Contact Us</a>
+            <ul class="sub"> 
+                <li><a href="">form</a></li>
+                <li><a href="">map</a></li>
+            </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
